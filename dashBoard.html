@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <title>StockFlix - Inventry Management System</title>
+   <link rel="stylesheet" href="dashBoard.css">
+</head>
+<body>
+    <main>
+        <nav class="navi">
+            <h2 class="logo">Stock<o>Flix</o></h2>
+            <span class="ab">Logout</span>
+            
+        </nav>
+        <div class="container">
+            <div class="item1 one">
+                    <h2 class="bname">Keshav Soni</h2>
+                    <p class="gstno">Gst No :1230987654326</p>
+            </div>
+            <div class="item1 four">
+                <p class="val">Total Stock</p>
+                <p class="count">47 items</p>
+                
+            </div>
+            
+            <div class="item1 three ">
+                <p class="val">Total Investment</p>
+                <p class="invest">25000</p></div>
+                <div class="item1 two">
+                        <h3>Add New Stock</h3>
+                        <input type="text" id="stockname" placeholder="Product Name" required>
+                        <input type="number" id="amount" placeholder="Quantity (+ for add, - for remove)" required>
+                        <input type="number" id="price" placeholder="New price" required>
+    
+                        <button type="submit" class="sign">Add Product</button>
+                       
+                    
+                </div>
+            <div class="item1 five">
+                <h4>History</h4>
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Date </th>
+                            <th>Price</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        
+                </tbody>
+            </table></div>
+           
+        </div>
+
+
+
+    </main>
+    
+</body>
+<script>
+    document.querySelector('.ab').addEventListener('click',()=>{
+        window.location.href='index.html';
+    })
+</script>
+</html>

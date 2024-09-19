@@ -1,0 +1,324 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e0f2fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b3358;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navi {
+    background-color: #e0f2fa;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 50vw;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+o {
+    color: #60c0ea;
+}
+
+.ab {
+    color: #082650;
+    background-color: #e0f2fa;
+    border: 2px solid #2A7BEE;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    background-color: #e0f2fa;
+    padding: 3vw;
+    min-height: 87vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.sign:hover,.ab:hover,
+.item1:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 5px 20px #2A7BEE;
+
+}
+
+.item1 {
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f6f6;
+    border: 2px solid #2A7BEE;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.4s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bname {
+    font-weight: 800;
+    font-size: 60px;
+    color: #2562b7;
+}
+
+.gstno {
+    font-size: xx-large;
+    font-weight: 400;
+    color: grey;
+}
+
+.one {
+    grid-area: 1/1/2/3;
+    align-items: left;
+    gap: 10px;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    grid-area: 1/3/3/5;
+}
+
+.val {
+    color: #2562b7;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.count, .invest {
+    padding-left: 1vw;
+    color: grey;
+    font-size: x-large;
+}
+
+.three {
+    gap: 5px;
+    grid-area: 2/1/3/2;
+}
+
+.four {
+    gap: 5px;
+    grid-area: 2/2/3/3;
+}
+
+.five {
+    padding: 0;
+    color: black;
+    grid-area: 3/1/4/5;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    outline: none;
+    color: #082650;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: 2px solid #6EC1E4;
+    font-size: x-large;
+    margin-bottom: 2px;
+}
+
+.sign {
+    cursor: pointer;
+    height: 50px;
+    width: 85%;
+    color: white;
+    border-radius: 40px;
+    border: 3px solid #6EC1E4;
+    box-shadow: 4px 5px 20px #6EC1E4;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #2A7BEE 0%, #153E77 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+
+h3 {
+    text-align: center;
+    color: #2562b7;
+    font-size: xx-large;
+}
+
+h4 {
+    text-align: center;
+    color: #007BFF;
+    padding: 3vh;
+    font-size: x-large;
+}
+
+#history-table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 92%;
+    margin-top: 10px;
+}
+
+#history-table th,
+#history-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#history-table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+#history-table tbody tr {
+    border-radius: 6px;
+    border: 1px solid #007BFF;
+    color: grey;
+}
+
+#history-table tbody tr:hover {
+    background-color: #f5f6f6;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        padding-right: 10vw;
+        font-size: 40px;
+    }
+
+    .ab {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .item1 {
+        padding-left: 2vw;
+    }
+
+    .bname {
+        font-size: 40px;
+    }
+
+    .gstno, .val, .count, .invest {
+        font-size: large;
+    }
+
+    input {
+        width: 80%;
+        font-size: large;
+    }
+
+    .sign {
+        width: 90%;
+        font-size: large;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    h4 {
+        font-size: medium;
+        padding: 2vh;
+    }
+}
+@media (max-width:680px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .item1{
+        padding:20px;
+    }
+    .
+    
+}
+@media (max-width: 480px) {
+    .navi {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        padding-right: 0;
+        font-size: 30px;
+    }
+
+    .ab {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .bname {
+        font-size: 30px;
+    }
+
+    .gstno, .val, .count, .invest {
+        font-size: medium;
+    }
+
+    input {
+        width: 95%;
+        font-size: medium;
+    }
+
+    .sign {
+        width: 95%;
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    h4 {
+        font-size: small;
+        padding: 1vh;
+    }
+
+    #history-table {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #history-table th, 
+    #history-table td {
+        font-size: small;
+    }
+}
