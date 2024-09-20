@@ -16,7 +16,11 @@
     margin: 0;
     padding: 0;
 }
-
+main{
+    height:100vh;
+    width:100vw;
+    background-color: #e0f2fa;
+}
 .navi {
     background-color: #e0f2fa;
     height: 10vh;
@@ -50,7 +54,7 @@ o {
 .container {
     background-color: #e0f2fa;
     padding: 3vw;
-    min-height: 87vh;
+    min-height: 600px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
