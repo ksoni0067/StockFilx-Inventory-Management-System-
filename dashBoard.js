@@ -1,4 +1,9 @@
 const user=JSON.parse(localStorage.getItem("BID"));
+if( user==null){
+    alert("Data is not accessable");
+    window.location.href='index.html';
+    
+}
 let currUser=JSON.parse(localStorage.getItem(user));
 let History=(currUser.History) || [];
 
@@ -53,6 +58,7 @@ update();
     
 })();
 document.querySelector('.ab').addEventListener('click',()=>{
+    localStorage.setItem("BID",null);
     window.location.href='index.html';
 })
 function update(){

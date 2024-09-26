@@ -17,45 +17,47 @@
         </nav>
         <div class="container">
             <div class="item1 one">
-                    <h2 class="bname">Keshav Soni</h2>
-                    <p class="gstno">Gst No :1230987654326</p>
+                    <h2 class="bname"></h2>
+                    <p class="gstno">Gst No :</p>
             </div>
             <div class="item1 four">
                 <p class="val">Total Stock</p>
-                <p class="count">47 items</p>
+                <p class="count"></p>
                 
             </div>
             
             <div class="item1 three ">
                 <p class="val">Total Investment</p>
-                <p class="invest">25000</p></div>
-                <div class="item1 two">
+                <p class="invest"></p></div>
+                
+                    <form action="" class=" item1 two">
                         <h3>Add New Stock</h3>
-                        <input type="text" id="stockname" placeholder="Product Name" required>
-                        <input type="number" id="amount" placeholder="Quantity (+ for add, - for remove)" required>
-                        <input type="number" id="price" placeholder="New price" required>
+                        <input type="text" id="stockname" placeholder="Product Name" >
+                        <input type="number" id="amount" placeholder="Quantity (+ for add, - for remove)" >
+                        <input type="number" id="price" placeholder="New price" >
     
-                        <button type="submit" class="sign">Add Product</button>
-                       
+                        <button type="submit" class="add sign">Add Product</button>
+                       </form>
                     
-                </div>
+            
             <div class="item1 five">
                 <h4>History</h4>
+                <div class="t">
                 <table id="history-table">
                     <thead>
                         <tr>
                             <th>Product ID</th>
                             <th>Product Name</th>
                             <th>Quantity</th>
-                            <th>Date </th>
                             <th>Price</th>
+                            <th>Date </th>
 
                         </tr>
                     </thead>
                     <tbody id="history-table-body">
                         
                 </tbody>
-            </table></div>
+            </table></div></div>
            
         </div>
 
@@ -64,9 +66,6 @@
     </main>
     
 </body>
-<script>
-    document.querySelector('.ab').addEventListener('click',()=>{
-        window.location.href='index.html';
-    })
-</script>
+<script src="dashBoard.js"></script>
+
 </html>

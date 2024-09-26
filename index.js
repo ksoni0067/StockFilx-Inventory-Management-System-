@@ -28,6 +28,10 @@ function signUp(event) {
       gstin: gstin,
       ownerName: ownerName,
       password: password,
+      investment:0,
+      stockList:new Object(),
+      History:new Array()
+
     };
     document.querySelector('.formsig').reset();
     localStorage.setItem(gstin, JSON.stringify(userDetails));
@@ -42,7 +46,7 @@ function logIn(event) {
     const storedUser = JSON.parse(localStorage.getItem(enteredBusinessId));
     if (storedUser &&  storedUser.password === enteredPassword) {
         alert('Login successful!');
-        localStorage.setItem("BID",enteredBusinessId);
+        localStorage.setItem("BID",JSON.stringify(enteredBusinessId));
         document.querySelector('.formlog').reset();
         window.location.href = 'dashBoard.html';
 
@@ -50,13 +54,13 @@ function logIn(event) {
         alert('Invalid Business ID or Password');
     }
 }
-document.querySelectorAll(".signin").forEach((e)=>{e.addEventListener('click',()=>{
+document.querySelectorAll(".signin").forEach((e)=>{e.addEventListener('click',(e)=>{
     main.style.display='none';
     log.style.display='none';
     sig.style.display='flex';
     e.preventDefault(); 
 })});
-document.querySelectorAll('.login').forEach((e)=>{e.addEventListener('click',()=>{
+document.querySelectorAll('.login').forEach((e)=>{e.addEventListener('click',(e)=>{
     main.style.display='none';
     sig.style.display='none';
     log.style.display='flex';
