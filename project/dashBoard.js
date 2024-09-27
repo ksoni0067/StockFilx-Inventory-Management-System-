@@ -42,7 +42,7 @@ document.querySelector('.add').addEventListener('click',(e)=>{
         }
         else{
             currUser.investment+=temp[pName].price*count;
-            currUser.profit=parseFloat(currUser.profit+(price-temp[pName].price)*Math.abs(count)).toFixed(2);
+            currUser.profit=parseFloat(Number(currUser.profit)+(price-temp[pName].price)*Math.abs(count)).toFixed(2);
             
         }
     
@@ -101,7 +101,7 @@ function update(){
     document.querySelectorAll('.invest').forEach((e)=>{
         e.innerText=`₹ ${currUser.investment}`;
     })
-    document.querySelector('.pro').innerText=`₹ ${(currUser.profit).toFixed(2)}`;
+    document.querySelector('.pro').innerText=`₹ ${parseFloat(currUser.profit).toFixed(2)}`;
 
 }
 function genrate(){

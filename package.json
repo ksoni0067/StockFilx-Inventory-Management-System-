@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "name": "uca-project-web",
+  "version": "1.0.0",
+  "description": "Stockflix is a web-based inventory management system designed to help businesses efficiently manage their stock levels. The system allows users to track product quantities, update stock levels, and view inventory reports.",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
