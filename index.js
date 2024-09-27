@@ -29,6 +29,7 @@ function signUp(event) {
       ownerName: ownerName,
       password: password,
       investment:0,
+      profit:0,
       stockList:new Object(),
       History:new Array()
 
